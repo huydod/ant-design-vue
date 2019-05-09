@@ -287,13 +287,3 @@ export declare class Modal extends AntdComponent {
   static warning(options: ModalOptions): ModalConfirm;
   static confirm(options: ModalOptions): ModalConfirm;
 }
-
-declare module 'vue/types/vue' {
-  interface Vue {
-    $info: (modalOptios: ModalOptions) => ModalConfirm;
-    $success: (modalOptios: ModalOptions) => ModalConfirm;
-    $error: (modalOptios: ModalOptions) => ModalConfirm;
-    $warning: (modalOptios: ModalOptions) => ModalConfirm;
-    $confirm: (modalOptios: ModalOptions) => ModalConfirm;
-  }
-}

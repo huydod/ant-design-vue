@@ -75,9 +75,3 @@ export declare class Message {
   config: (options: MessageConfigOptions) => void;
   destroy: () => void;
 }
-
-declare module 'vue/types/vue' {
-  interface Vue {
-    $message: Message;
-  }
-}
